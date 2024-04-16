@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
     const buttonStyle = {
         width: '100%',
         padding: '10px',
-        backgroundColor: '#040670', 
-        color: 'white', // White text
+        backgroundColor: '#040670',
+        color: 'white',
         border: 'none',
         cursor: 'pointer',
         textDecoration: 'none'
     };
 
     const hoverStyle = {
-        backgroundColor: '#45a049' // Darker green on hover
+        backgroundColor: '#45a049'
     };
 
     return (
@@ -22,20 +23,16 @@ function Sidebar() {
             </div>
             <ul style={{ listStyleType: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '20px' }}>
-                    <button style={buttonStyle} onMouseOver={(e) => e.target.style.backgroundColor = hoverStyle.backgroundColor}
-                        onMouseOut={(e) => e.target.style.backgroundColor = buttonStyle.backgroundColor}>Home</button>
+                    <Link to="/" style={buttonStyle}>Home</Link>
                 </li>
                 <li style={{ marginBottom: '20px' }}>
-                    <button style={buttonStyle} onMouseOver={(e) => e.target.style.backgroundColor = hoverStyle.backgroundColor}
-                        onMouseOut={(e) => e.target.style.backgroundColor = buttonStyle.backgroundColor}>Pulls</button>
+                    <Link to="/pulls" style={buttonStyle}>Pulls</Link>
                 </li>
                 <li style={{ marginBottom: '20px' }}>
-                    <button style={buttonStyle} onMouseOver={(e) => e.target.style.backgroundColor = hoverStyle.backgroundColor}
-                        onMouseOut={(e) => e.target.style.backgroundColor = buttonStyle.backgroundColor}>Guild Battles</button>
+                    <Link to="/guild-battles" style={buttonStyle}>Guild Battles</Link>
                 </li>
                 <li style={{ marginBottom: '20px' }}>
-                    <button style={buttonStyle} onMouseOver={(e) => e.target.style.backgroundColor = hoverStyle.backgroundColor}
-                        onMouseOut={(e) => e.target.style.backgroundColor = buttonStyle.backgroundColor}>Ranker</button>
+                    <Link to="/ranker" style={buttonStyle}>Ranker</Link>
                 </li>
             </ul>
         </div>
