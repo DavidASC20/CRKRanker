@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Pulls from './pages/Pulls';
 import GuildBattles from './pages/GuildBattles';
 import Ranker from './pages/Ranker';
+import Footer from './footer'; // Make sure the path is correct
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Routes>
         </div>
       </div>
+      <Footer></Footer>
     </Router>
   );
 }
