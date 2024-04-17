@@ -24,7 +24,7 @@ function Pulls() {
 
     return (
 
-        <div>
+        <div style={{background: 'rgba(0, 0, 0, 0.7)'}}>
             <h2>Pulls Page</h2>
             <div>
             <img 

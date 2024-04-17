@@ -17,7 +17,7 @@ function Sidebar() {
     };
 
     return (
-        <div style={{ width: '200px', height: '100vh', background: '#f0f0f0', padding: '20px' }}>
+        <div style={{ width: '200px', height: '100vh', background: 'rgba(0, 0, 0, 0.3)', padding: '20px' }}>
             <div style={{ marginBottom: '20px', textAlign: 'center' }}>
                 <img src="/crkLogo.jpeg" alt="Logo" style={{ width: '100%', maxWidth: '150px' }} />
             </div>
