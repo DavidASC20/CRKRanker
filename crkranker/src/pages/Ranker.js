@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../Ranker.css';
 
 function Ranker() {
   // State to store the selected rank and number of trophies
