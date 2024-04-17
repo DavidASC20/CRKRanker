@@ -22,13 +22,13 @@ function Sidebar() {
                 <img src="/crkLogo.jpeg" alt="Logo" style={{ width: '100%', maxWidth: '150px' }} />
             </div>
             <ul style={{ listStyleType: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '20px' }}>
+                <li style={{ marginBottom: '30px' }}>
                     <Link to="/" style={buttonStyle}>Home</Link>
                 </li>
-                <li style={{ marginBottom: '20px' }}>
+                <li style={{ marginBottom: '30px' }}>
                     <Link to="/pulls" style={buttonStyle}>Pulls</Link>
                 </li>
-                <li style={{ marginBottom: '20px' }}>
+                <li style={{ marginBottom: '30px' }}>
                     <Link to="/guild-battles" style={buttonStyle}>Guild Battles</Link>
                 </li>
                 <li style={{ marginBottom: '20px' }}>

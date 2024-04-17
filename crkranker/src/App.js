@@ -10,14 +10,16 @@ import Ranker from './pages/Ranker';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{ display: 'flex', minHeight: '100vh' }}>
         <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/pulls" element={<Pulls />} />
-          <Route path="/guild-battles" element={<GuildBattles />} />
-          <Route path="/ranker" element={<Ranker />} />
-        </Routes>
+        <div style={{ flex: 1, padding: '20px' }}> {/* Main content area */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/pulls" element={<Pulls />} />
+            <Route path="/guild-battles" element={<GuildBattles />} />
+            <Route path="/ranker" element={<Ranker />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
